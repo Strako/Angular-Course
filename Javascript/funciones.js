@@ -1,3 +1,4 @@
+/*
 //funciones
 
 function sumar(num3, num4){
@@ -20,7 +21,7 @@ console.log(resultadoDos)
 //mensaje
 const mensaje = argumento => ('Hola '+ argumento + ', este es el retorno de la funcion flecha')
 
-resultadoTres = mensaje('armando')
+let resultadoTres = mensaje('armando')
 console.log(resultadoTres)
 
 //suamTres
@@ -30,3 +31,19 @@ const suamTres = (num = 0) => {
 }
 
 suamTres(12)
+
+*/
+
+
+
+function funcionUno(argumento1, argumento2){
+    console.log('Arg 1: ' + argumento1 + ' Arg 2: ' + argumento2)
+    let multiplicacion = (argumento1 * 10) + (argumento2 * 100)
+    
+    return resultado(multiplicacion)
+}
+
+let resultado = argA => console.log('--' + argA + '--');
+
+funcionUno(37,19)
+

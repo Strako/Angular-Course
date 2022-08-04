@@ -16,3 +16,6 @@ fetch ('https://pokeapi.co/api/v2/pokemon')
 })
 //si detecta una excepcion la toma como argumento y la imprime en consola
 .catch(error => console.log(error))
+
+
+
