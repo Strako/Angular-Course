@@ -1,5 +1,5 @@
-export class perro{
+export class Perro{
     constructor(){
-        console.log('soy un perro');
+        console.log('2- Hola, soy un perro');
     }
 }

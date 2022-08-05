@@ -1,6 +1,6 @@
-export class gato{
+export class Gato{
     constructor(){
-        console.log('soy un soy un gato');
+        console.log('1- Hola, soy un soy un gato');
     }
 } 
 

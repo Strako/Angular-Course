@@ -1,9 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.perro = void 0;
-class perro {
+exports.Perro = void 0;
+class Perro {
     constructor() {
-        console.log('soy un perro');
+        console.log('2- Hola, soy un perro');
     }
 }
-exports.perro = perro;
+exports.Perro = Perro;
