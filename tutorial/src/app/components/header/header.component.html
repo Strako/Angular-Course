@@ -1,0 +1,15 @@
+<p>header works!</p>
+{{titulo}}
+<ul>
+    <li *ngFor="let palabra of listaPalabras; let i = index">
+        {{i}} {{palabra}}
+    </li>
+</ul>
+
+<br>
+<label for="palabra">palabra    </label>
+<br>
+<br>
+<input type="text" name="palabra" id="palabra"><br>
+<button (click)="add()">agregar palabra</button>
+

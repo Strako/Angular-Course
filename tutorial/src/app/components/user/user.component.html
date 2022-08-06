@@ -1,0 +1,23 @@
+<p>user works!</p>
+
+<ng-container *ngIf="!isLogged; else logeado">
+    <button (click)="loggin()">Iniciar Sesion</button>
+    <button>Registrarse</button>
+</ng-container>
+
+<ng-template #logeado>
+    <button>Ir a perfil</button>
+    <button>Ir a amigos</button>
+    <button (click)="levelUp()">Level Up</button>
+    <button (click)="logout()">Cerrar Sesion</button>
+
+    <button *ngIf="level >= 10; else underLevel" (click)="level = 0 ">Boton secreto</button>
+
+    <ng-template #underLevel>
+        <br>
+        <label>Secrets everywhere... </label>
+    </ng-template>
+
+    <p>{{level}}</p>
+    
+</ng-template>
