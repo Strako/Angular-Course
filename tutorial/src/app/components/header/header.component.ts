@@ -28,6 +28,7 @@ export class HeaderComponent implements OnInit {
 
   //Defincion funciones
   add() {
+    try{
     if ((<HTMLInputElement>document.getElementById('palabra')).value != this.listaPalabras[this.listaPalabras.length - 1]) {
       this.inputPalabra = (<HTMLInputElement>document.getElementById('palabra')).value;
       this.listaPalabras.push(this.inputPalabra);
@@ -35,5 +36,8 @@ export class HeaderComponent implements OnInit {
       console.log('la palabra es igual a la ultima')
     }
 
+    }catch(error){
+      console.log(error)
+    }
   }
 }

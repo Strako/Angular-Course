@@ -13,8 +13,12 @@ export class UserComponent {
   }
 
   loggin() {
+    try{
     this.isLogged = true;
     console.log(this.isLogged.toString())
+    }catch(error){
+      console.log(error)
+    }
   }
   logout(){
     this.isLogged = false;
