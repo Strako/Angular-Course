@@ -1,1 +1,33 @@
-<p>cabecera works!</p>
+<div class="text-nowrap bg-dark border text-center centered" style="width:all;">
+    {{titleCabecera}}
+</div>
+
+<h1>[ngFor]</h1>
+
+<div class="container" style=" color: black;">
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Nombre</th>
+                <th>URL</th>
+                <th>Imagen</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let objeto of arrayPokemon; index as i">
+                <th>{{(i + 1) +(offset  * (currentPage -1))}}</th>
+                <td>{{objeto.name}}</td>
+                <td>{{objeto.url}}</td>
+                <td><img src="{{arrayPokeImg[i]}}" class="img-thumbnail">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div style="text-align: center;">Pagina: 
+        <input type="number" id="page" name="page" required minlength="1">
+        <button type="button " class="btn btn-dark" (click)="newPage()">Ir</button>
+    </div>
+
+</div>

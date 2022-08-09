@@ -1,11 +1,18 @@
-<h1 class="container bg-dark text-white text-center my-4 py-4"> ngIf status = {{status}}</h1>
+<h1 class="container bg-dark text-white text-center my-4 py-4"> [ngClass]</h1>
+
 <div class="container">
-  <button class="btn btn-warning" (click)="switch()">Accion</button>
-  
-  <p class="text-info" *ngIf="status; else parrafoDos">asdasdasdasdasd ipsum dolor sit amet, consectetur adipiscing elit. Nam elementum risus ac justo faucibus, venenatis euismod lectus molestie. Maecenas sed interdum quam, vel aliquam eros. Pellentesque lacinia in lacus a facilisis. Nunc quis augue ligula. Proin placerat posuere dolor, at congue diam vehicula at. Aenean sed sem ut tellus sollicitudin convallis. In pulvinar nisi ipsum, id eleifend mauris rutrum eget. Donec elementum elit eget vehicula tristique. Ut ultricies ultrices sagittis. Aenean aliquam, augue vitae fringilla venenatis, quam dui tristique nisl, sed pretium odio urna vitae velit. Aliquam dictum vitae tortor id scelerisque.</p>
-  
-  <ng-template #parrafoDos>
-  <p class="text-danger">Duis aliquam lobortis elit non tempor. Ut sit amet viverra orci, id blandit massa. Donec ut iaculis tortor. Phasellus at consectetur massa, sit amet aliquam diam. Nunc posuere enim vel lorem scelerisque, faucibus interdum est cursus. Vestibulum ac nulla augue. Nunc sit amet velit sollicitudin elit efficitur mollis. Sed sit amet nibh mauris. Etiam fringilla varius massa, vel volutpat tellus luctus eget. Nunc tempor tellus id accumsan dapibus. Nunc ac volutpat elit. Mauris vestibulum orci libero, sed maximus orci rutrum ut. Nam nec lectus urna.</p>
-  </ng-template>
+  <button type="button " style="float:left" class="btn btn-warning" (click)="status = 'primero'" >Boton 1</button>
+  <button type="button "  style="float: right" class="btn btn-dark" (click)="status = 'segundo'">Boton 2</button>
+<br><br><br>
+
+  <div class="text-info " [ngClass]="status === 'primero' ? 'd-block':'d-none'">
+    <app-cabecera></app-cabecera>
+  </div>
+
+
+  <div class="text-info bg-dark " [ngClass]="status === 'segundo' ? 'd-block':'d-none'" style="text-align:center" >
+  Proxima seccion
+  </div>
+  <app-footer></app-footer>
 
 </div>

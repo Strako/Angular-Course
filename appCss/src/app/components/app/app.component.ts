@@ -7,14 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit{
   title = 'Testing --appCss--';
-  status: boolean = true;
+  status: string = ''
     constructor(){
       
     }
     ngOnInit(){
     }
 
-    switch(){
-      this.status = !this.status
-    }
 }
