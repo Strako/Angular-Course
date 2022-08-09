@@ -1,14 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <app-test></app-test>
-
+<h1 class="container bg-dark text-white text-center my-4 py-4"> ngIf status = {{status}}</h1>
+<div class="container">
+  <button class="btn btn-warning" (click)="switch()">Accion</button>
   
-</body>
-</html>
+  <p class="text-info" *ngIf="status; else parrafoDos">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam elementum risus ac justo faucibus, venenatis euismod lectus molestie. Maecenas sed interdum quam, vel aliquam eros. Pellentesque lacinia in lacus a facilisis. Nunc quis augue ligula. Proin placerat posuere dolor, at congue diam vehicula at. Aenean sed sem ut tellus sollicitudin convallis. In pulvinar nisi ipsum, id eleifend mauris rutrum eget. Donec elementum elit eget vehicula tristique. Ut ultricies ultrices sagittis. Aenean aliquam, augue vitae fringilla venenatis, quam dui tristique nisl, sed pretium odio urna vitae velit. Aliquam dictum vitae tortor id scelerisque.</p>
+  
+  <ng-template #parrafoDos>
+  <p class="text-danger">Duis aliquam lobortis elit non tempor. Ut sit amet viverra orci, id blandit massa. Donec ut iaculis tortor. Phasellus at consectetur massa, sit amet aliquam diam. Nunc posuere enim vel lorem scelerisque, faucibus interdum est cursus. Vestibulum ac nulla augue. Nunc sit amet velit sollicitudin elit efficitur mollis. Sed sit amet nibh mauris. Etiam fringilla varius massa, vel volutpat tellus luctus eget. Nunc tempor tellus id accumsan dapibus. Nunc ac volutpat elit. Mauris vestibulum orci libero, sed maximus orci rutrum ut. Nam nec lectus urna.</p>
+  </ng-template>
+
+</div>

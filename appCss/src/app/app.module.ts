@@ -2,12 +2,16 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './components/app/app.component';
-import { TestComponent } from './components/test/test.component';
+import { CabeceraComponent} from './components/cabecera/cabecera.component';
+import { FooterComponent } from './components/footer/footer.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    TestComponent
+    CabeceraComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule
