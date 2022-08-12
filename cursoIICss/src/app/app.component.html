@@ -1,5 +1,10 @@
-<div class="container">
-    <app-header></app-header>   
+<body class=""   [ngClass]="mode === 1? 'bg-light':'bg-dark'">
+    <button type="button" class="btn float" style="float:right;" [ngClass]="mode === 1? 'btn-dark': 'btn-light'" (click)="switch()">{{arrMdTex[mode]}}</button>       
+
+    <div class="container">
+    <app-header></app-header>
     <router-outlet></router-outlet>
     <app-footer></app-footer>
 </div>
+
+</body>
