@@ -1,0 +1,21 @@
+<div class="mt-2 shadow p-3 mb-5 bg-body rounded">
+    <h2 class="text-white bg-dark rounded">About Me</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ante elit, sagittis suscipit elit ac, accumsan rutrum ante. Morbi scelerisque odio fermentum, rutrum nulla sit amet, maximus tellus. Quisque sit amet consequat ipsum. Donec at tristique ante, sed efficitur risus. Phasellus pulvinar dui nec laoreet molestie. Sed nec lectus dui. Quisque dignissim, diam eu euismod suscipit, nulla risus euismod tortor, ac sagittis nisl felis in mi. Ut bibendum orci quis ornare ultricies.
+    </p>
+    <p>
+    Nulla euismod purus semper dolor sagittis efficitur. Proin suscipit pulvinar arcu, quis iaculis sem. Suspendisse ullamcorper urna elit, in pharetra nibh molestie quis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean vel sodales mauris, quis posuere lectus. Etiam quis augue euismod, finibus metus a, semper metus. Aliquam facilisis augue non dolor vehicula, sit amet finibus orci feugiat. In id mollis odio. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur dignissim, sapien quis rhoncus pharetra, erat urna aliquet orci, eget elementum ante ipsum eget erat. Aliquam eget turpis at velit lacinia viverra.
+    </p>  
+    <h2 class="text-white bg-dark rounded">Experience</h2>
+
+    <div class="list-group">
+        <a class="list-group-item list-group-item-action " aria-current="true" [ngClass]="auxSelected === item.number ? 'active':''" *ngFor="let item of arrExp; index as i" (click)="auxSelected=(item.number)" >
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">{{item.title}}</h5>
+            <small>{{item.date}}</small>
+          </div>
+          <p class="mb-1">{{item.rol}}</p>
+          <small>{{item.description}}</small>
+        </a>
+      </div>
+
+</div>

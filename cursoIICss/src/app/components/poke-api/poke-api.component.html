@@ -1,10 +1,9 @@
-<div class="text-nowrap bg-dark border text-center centered" style="width:all;">
-    {{titleCabecera}}
-</div>
+<div class="mt-2 mb-5 container rounded shadow text-nowrap bg-dark border text-center centered colorText"style="width:all; color:rgb(105, 197, 240);">
+    {{titlePokeAPI}}
+    <h2 class="rounded">[ngFor]</h2>    
 
-<h1>[ngFor]</h1>
 
-<div class="container" style=" color: black;">
+<div class="container shadow p-3 mb-5 bg-body rounded">
 
     <table class="table">
         <thead>
@@ -25,9 +24,9 @@
             </tr>
         </tbody>
     </table>
-    <div style="text-align: center;">Pagina: 
+    <div style="text-align: center; color: black;">Pagina: 
         <input style="width:45px" type="number" id="page" name="page" required minlength="1">
         <button type="button " class="btn btn-dark" (click)="newPage()">Ir</button>
     </div>
-
+</div>
 </div>
